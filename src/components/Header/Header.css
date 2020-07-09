@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.quantity {
+  color: red;
+  background-color: yellow;
+}

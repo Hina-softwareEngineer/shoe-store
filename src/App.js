@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import ValueContext from "./components/context/ValueContext";
+import numberReducer from "./components/context/Reducer";
+import Header from "./components/Header/Header";
+import ShopPage from "./components/ShopPage/ShopPage";
 
 function App() {
+  let [state, dispatch] = React.useReducer(
+    numberReducer,
+    React.useContext(ValueContext)
+  );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ValueContext.Provider value={{ state, dispatch }}>
+        <div className="App">
+          <Header />
+          <ShopPage />
+        </div>
+      </ValueContext.Provider>
     </div>
   );
 }
