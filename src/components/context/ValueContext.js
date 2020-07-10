@@ -1,5 +1,11 @@
 import React from "react";
 
-const ValueContext = React.createContext(1);
+const ValueContext = React.createContext(0);
+const ItemContext = React.createContext(null);
 
-export default ValueContext;
+const contexts = {
+  ValueContext,
+  ItemContext,
+};
+
+export default contexts;

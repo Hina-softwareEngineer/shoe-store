@@ -55,3 +55,5 @@ const shoes = {
       "https://images.unsplash.com/photo-1578116922645-3976907a7671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
   },
 };
+
+export default shoes;

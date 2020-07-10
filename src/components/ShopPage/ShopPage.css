@@ -1,0 +1,29 @@
+.ShopPage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  border: 2px solid black;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 50px;
+}
+
+.item > h1 {
+  margin: 0;
+  height: 80px;
+}
+
+.item > button {
+  margin: 0px;
+}
+
+.image {
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+}

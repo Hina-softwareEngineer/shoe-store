@@ -1,10 +1,10 @@
 import React from "react";
 import "./Header.css";
 
-import ValueContext from "../context/ValueContext";
+import contexts from "../context/ValueContext";
 
 const Header = () => {
-  let value = React.useContext(ValueContext);
+  let value = React.useContext(contexts.ValueContext);
   console.log(value.state);
   return (
     <div className="header">
@@ -12,8 +12,8 @@ const Header = () => {
         {(value3) => <h1>{value3}</h1>}
       </ValueContext.Consumer> */}
 
-      <div>Image</div>
-      <div>Search Bar</div>
+      <div>Shoes</div>
+
       <nav>
         <li>Sign In</li>
         <li>Wish List</li>

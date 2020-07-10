@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import ValueContext from "./components/context/ValueContext";
+import contexts from "./components/context/ValueContext";
 import numberReducer from "./components/context/Reducer";
 import Header from "./components/Header/Header";
 import ShopPage from "./components/ShopPage/ShopPage";
@@ -9,16 +9,16 @@ import ShopPage from "./components/ShopPage/ShopPage";
 function App() {
   let [state, dispatch] = React.useReducer(
     numberReducer,
-    React.useContext(ValueContext)
+    React.useContext(contexts.ValueContext)
   );
   return (
     <div>
-      <ValueContext.Provider value={{ state, dispatch }}>
+      <contexts.ValueContext.Provider value={{ state, dispatch }}>
         <div className="App">
           <Header />
           <ShopPage />
         </div>
-      </ValueContext.Provider>
+      </contexts.ValueContext.Provider>
     </div>
   );
 }
