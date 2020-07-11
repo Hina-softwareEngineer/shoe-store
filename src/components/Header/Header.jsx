@@ -8,10 +8,6 @@ const Header = () => {
   console.log(value.state);
   return (
     <div className="header">
-      {/* <ValueContext.Consumer>
-        {(value3) => <h1>{value3}</h1>}
-      </ValueContext.Consumer> */}
-
       <div>Shoes</div>
 
       <nav>
