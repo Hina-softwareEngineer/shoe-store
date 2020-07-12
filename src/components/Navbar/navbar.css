@@ -6,5 +6,11 @@
 .navbar > a {
   color: black;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px 30px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.4px;
+}
+
+.navbar > a:hover {
+  color: red !important;
 }

@@ -1,0 +1,34 @@
+.home {
+  position: relative;
+}
+
+.homePage {
+  width: 100%;
+}
+
+.homePage > img {
+  width: inherit;
+  height: 99.66vh;
+}
+
+.overlayText {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+}
+
+.homeNavbar {
+  position: absolute;
+  top: 0;
+  justify-content: flex-end !important;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+.homeNavbar > a {
+  color: white !important;
+  font-weight: bolder;
+  font-size: 20px;
+}

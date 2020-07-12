@@ -3,9 +3,9 @@ import "./navbar.css";
 
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ name }) => {
   return (
-    <div className="navbar">
+    <div className={`navbar ${name ? name : null}`}>
       <Link to="/">Home</Link>
       <Link to="/shopPage">Shop</Link>
       <Link to="/register">Register</Link>
