@@ -7,9 +7,9 @@ const Navbar = ({ name }) => {
   return (
     <div className={`navbar ${name ? name : null}`}>
       <Link to="/">Home</Link>
-      <Link to="/shopPage">Shop</Link>
-      <Link to="/register">Register</Link>
-      <Link to="/contact">Contact Us</Link>
+      <Link to="/shop/shopPage">Shop</Link>
+      <Link to="/shop/register">Register</Link>
+      <Link to="/shop/contact">Contact Us</Link>
     </div>
   );
 };

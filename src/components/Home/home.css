@@ -13,9 +13,47 @@
 
 .overlayText {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 10%;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.overlayText > h1 {
+  font-size: 3.5rem;
+  margin-bottom: 5px;
+}
+
+.overlayText > h3 {
+  margin: 5px 0;
+  font-size: 2.5rem;
+}
+
+.overlayText > p {
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.overlayText > button:focus {
+  outline: none;
+}
+
+.overlayText > button:hover {
+  background-color: #009ccc;
+  text-shadow: none;
+}
+
+.overlayText > button {
+  background-color: unset;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: bolder;
+  border: 2px solid white;
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .homeNavbar {
@@ -31,4 +69,9 @@
   color: white !important;
   font-weight: bolder;
   font-size: 20px;
+}
+
+.homeNavbar > a:hover {
+  border-bottom: 2px solid white;
+  text-shadow: 2px 2px 4px #000000;
 }
