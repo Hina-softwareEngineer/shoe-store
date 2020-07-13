@@ -3,6 +3,7 @@
   padding: 20px;
   margin: 0 auto;
   letter-spacing: 1.3px;
+  position: relative;
 }
 
 label {
@@ -60,4 +61,18 @@ input[type="submit"]:hover {
 
 .register > p {
   font-size: 20px;
+}
+
+.blob1 {
+  position: absolute;
+  width: 400px;
+  top: -10%;
+  left: -60%;
+}
+
+.blob2 {
+  position: absolute;
+  width: 400px;
+  bottom: -30%;
+  right: -50%;
 }

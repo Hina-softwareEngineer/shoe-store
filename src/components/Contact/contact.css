@@ -4,6 +4,7 @@
   margin: 0 auto;
   text-align: center;
   letter-spacing: 1.3px;
+  position: relative;
 }
 .alert {
   background-color: green;
@@ -52,4 +53,28 @@ input[type="submit"]:hover {
 
 .contact > p {
   font-size: 20px;
+}
+
+.blob3 {
+  position: absolute;
+  top: 5%;
+  width: 400px;
+  left: -55%;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+.blob4 {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  left: -70%;
+}
+
+.blob1c {
+  position: absolute;
+  bottom: -2%;
+  width: 300px;
+  transform: scale(1.2) rotate(-45deg);
+  right: -50%;
 }
