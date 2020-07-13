@@ -1,0 +1,55 @@
+.contact {
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 1.3px;
+}
+.alert {
+  background-color: green;
+  padding: 10px 0;
+  color: white;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+  box-shadow: 2px 2px 4px grey;
+  width: 39.5%;
+}
+
+input {
+  margin: 20px auto;
+  display: block;
+  width: -webkit-fill-available;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #4e0ce9;
+  border-radius: 5px;
+  color: #017de2;
+}
+
+input:focus {
+  outline: none;
+  background-color: #ddf3f8;
+}
+
+input[type="submit"] {
+  background-color: #4e0ce9;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 2px 2px 4px grey;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.contact > h1 {
+  color: rgb(22, 134, 209);
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.contact > p {
+  font-size: 20px;
+}

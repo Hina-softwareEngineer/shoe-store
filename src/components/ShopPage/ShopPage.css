@@ -1,29 +1,50 @@
 .ShopPage {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item {
-  border: 2px solid black;
+  border: 2px solid #0099ff;
+  box-shadow: 2px 2px 4px #00c3fff6;
+  border-radius: 5px;
   width: 400px;
-  height: 500px;
+  height: 400px;
   padding: 20px;
   margin: 20px;
   margin-bottom: 50px;
 }
 
 .item > h1 {
-  margin: 0;
+  margin: 10px;
   height: 80px;
+  color: rgb(18, 18, 150);
+  text-shadow: 1px 1px 2px grey;
 }
 
 .item > button {
+  cursor: pointer;
   margin: 0px;
+  padding: 10px 15px;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
+  background-color: #0099ff;
+  border: 1px solid rgb(0, 238, 255);
+  box-shadow: 2px 2px 3px grey;
+  /* border: none; */
+}
+
+.item > button:hover {
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
 }
 
 .image {
   width: 100%;
-  height: 80%;
+  height: 65%;
   background-position: center;
   background-size: cover;
 }

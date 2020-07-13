@@ -32,6 +32,8 @@
 .overlayText > p {
   max-width: 500px;
   font-size: 20px;
+  /* color: #017de2; */
+  /* color: #4e0ce9; */
 }
 
 .overlayText > button:focus {
@@ -63,15 +65,17 @@
   width: 100%;
   padding: 20px 0;
   z-index: 2;
+  background-color: unset !important;
 }
 
 .homeNavbar > a {
   color: white !important;
   font-weight: bolder;
   font-size: 20px;
+  border: none !important;
 }
 
 .homeNavbar > a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid white !important;
   text-shadow: 2px 2px 4px #000000;
 }

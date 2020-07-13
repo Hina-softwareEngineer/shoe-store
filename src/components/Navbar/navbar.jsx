@@ -7,7 +7,7 @@ const Navbar = ({ name }) => {
   return (
     <div className={`navbar ${name ? name : null}`}>
       <Link to="/">Home</Link>
-      <Link to="/shop/shopPage">Shop</Link>
+      <Link to="/shop/products">Shop</Link>
       <Link to="/shop/register">Register</Link>
       <Link to="/shop/contact">Contact Us</Link>
     </div>

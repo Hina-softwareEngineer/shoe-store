@@ -1,16 +1,22 @@
 .navbar {
   display: flex;
   justify-content: center;
+  background-color: #29b6f6;
+  font-size: 20px;
 }
 
 .navbar > a {
-  color: black;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
   text-decoration: none;
   padding: 10px 15px;
   margin: 0px 15px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1.4px;
+  border-top: 2px solid #29b6f6;
 }
 
 .navbar > a:hover {
+  border-top: 2px solid white;
 }
