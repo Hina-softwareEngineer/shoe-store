@@ -73,8 +73,19 @@ input[type="submit"]:hover {
 
 .blob1c {
   position: absolute;
-  bottom: -2%;
+  bottom: -20%;
   width: 300px;
   transform: scale(1.2) rotate(-45deg);
   right: -50%;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    overflow: hidden;
+  }
+  .blob3,
+  .blob4,
+  .blob1c {
+    display: none;
+  }
 }

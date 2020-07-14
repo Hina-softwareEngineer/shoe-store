@@ -3,6 +3,12 @@
   justify-content: center;
   background-color: #29b6f6;
   font-size: 20px;
+  margin-bottom: 50px;
+}
+.bars {
+  display: none !important;
+  color: white;
+  padding: 10px 30px;
 }
 
 .navbar > a {
@@ -19,4 +25,38 @@
 
 .navbar > a:hover {
   border-top: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .bars {
+    display: inline-block !important;
+  }
+
+  .show {
+    display: block;
+    animation: showup 0.5s linear 0s;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+    box-shadow: 5px 5px 15px #000000 inset;
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 2px 2px 4px #000000 inset;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: unset;
+  }
 }

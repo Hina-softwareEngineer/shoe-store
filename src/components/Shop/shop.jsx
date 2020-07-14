@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "../Navbar/navbar";
 import Header from "../Header/Header";
+import Footer from "../Footer/footer";
 
 import { Outlet } from "react-router-dom";
 
@@ -12,6 +13,8 @@ const Shop = () => {
       <Navbar />
 
       <Outlet />
+
+      <Footer />
     </div>
   );
 };

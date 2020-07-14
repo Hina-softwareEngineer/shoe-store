@@ -1,0 +1,65 @@
+.news {
+  display: flex;
+  background-color: #29b6f6;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.email {
+  font-size: 2.2em;
+  color: blue;
+}
+
+.email > svg {
+  transform: scale(1.8);
+  fill: blue;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit > input {
+  display: inline;
+  border: 1px solid grey;
+  max-width: 400px;
+}
+
+.submit > button {
+  height: 45px;
+  margin-left: -5px;
+  padding: 5px 15px;
+  font-size: 18px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid blue;
+  background-color: #1506f3;
+  color: white;
+  cursor: pointer;
+}
+
+.submit > button:hover {
+  background-color: white;
+  color: #0c10e9;
+}
+
+@media screen and (max-width: 600px) {
+  .news {
+    flex-direction: column;
+  }
+
+  .submit {
+    flex-direction: column;
+  }
+  .submit > button {
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .email {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

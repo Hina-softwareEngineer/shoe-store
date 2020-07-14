@@ -44,3 +44,9 @@ li {
 .heart:hover {
   color: red;
 }
+
+@media screen and (max-width: 600px) {
+  li {
+    padding: 0 10px;
+  }
+}

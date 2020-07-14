@@ -76,3 +76,16 @@ input[type="submit"]:hover {
   bottom: -30%;
   right: -50%;
 }
+
+@media screen and (max-width: 800px) {
+  .register {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blob1,
+  .blob2 {
+    display: none;
+  }
+}

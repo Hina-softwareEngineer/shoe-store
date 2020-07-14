@@ -6,6 +6,8 @@ import Navbar from "../Navbar/navbar";
 
 import { useNavigate } from "react-router-dom";
 
+import HomeImage from "../../Images/home.png";
+
 const Home = () => {
   let navigate = useNavigate();
   return (
@@ -25,6 +27,8 @@ const Home = () => {
         </p>
 
         <button onClick={() => navigate("/shop/products")}>Shop Now</button>
+
+        <img className="shoes" src={HomeImage} alt="shoes Image" />
       </div>
     </div>
   );

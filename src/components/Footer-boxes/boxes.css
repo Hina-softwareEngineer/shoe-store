@@ -1,0 +1,25 @@
+.boxes > a {
+  display: block;
+  color: grey;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.boxes > a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.boxes > h3 {
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+.disable > a {
+  pointer-events: none;
+}
+
+.boxes > a > svg {
+  transform: scale(1.2) translateY(5px);
+  padding-top: 5px;
+}

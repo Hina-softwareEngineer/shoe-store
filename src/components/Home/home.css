@@ -79,3 +79,49 @@
   border-bottom: 2px solid white !important;
   text-shadow: 2px 2px 4px #000000;
 }
+
+.shoes {
+  display: none;
+  position: absolute;
+  bottom: -40%;
+  left: 45%;
+  width: 175px;
+  height: 175px;
+}
+
+@media screen and (max-width: 600px) {
+  .homeNavbar {
+    background-color: #29b6f6 !important;
+    padding: 0;
+    padding-top: 5px;
+  }
+  .overlayText > h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlayText > h3 {
+    font-size: 1.5rem;
+  }
+
+  .overlayText > p {
+    max-width: 300px;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: white;
+    font-size: 16px;
+    color: white;
+  }
+
+  .homePage {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .homePage > img {
+    height: 99.66vh;
+    width: unset;
+  }
+
+  .shoes {
+    display: block;
+  }
+}
