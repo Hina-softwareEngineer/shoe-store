@@ -12,6 +12,7 @@ import Contact from "./components/Contact/contact";
 import Shop from "./components/Shop/shop";
 
 import { Routes, Route } from "react-router-dom";
+import Preview from "./components/Preview/preview";
 
 function App() {
   let [state, dispatch] = React.useReducer(
@@ -26,6 +27,8 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="shop" element={<Shop />}>
               <Route path="products" element={<ShopPage />}></Route>
+
+              <Route path="product/:productId" element={<Preview />} />
               <Route path="register" element={<Register />}></Route>
               <Route path="contact" element={<Contact />}></Route>
             </Route>

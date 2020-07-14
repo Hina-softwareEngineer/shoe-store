@@ -12,7 +12,12 @@ const ShopPage = () => {
   return (
     <div className="ShopPage">
       {Object.keys(shoes).map((shoe) => (
-        <Item key={shoe} name={shoes[shoe].name} img={shoes[shoe].img} />
+        <Item
+          key={shoe}
+          id={shoe}
+          name={shoes[shoe].name}
+          img={shoes[shoe].img}
+        />
       ))}
     </div>
   );
