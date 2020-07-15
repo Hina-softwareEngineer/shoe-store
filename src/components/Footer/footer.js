@@ -49,7 +49,13 @@ const Footer = () => {
       </div>
       <div className="small">
         <p>Copyright &copy; Shoes 2020</p>
-        <p>Made with ❤️ by Hina</p>
+        <p>
+          Made with{" "}
+          <span role="img" aria-labelledby="heart">
+            ❤️
+          </span>{" "}
+          by Hina
+        </p>
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const Home = () => {
 
         <button onClick={() => navigate("/shop/products")}>Shop Now</button>
 
-        <img className="shoes" src={HomeImage} alt="shoes Image" />
+        <img className="shoes" src={HomeImage} alt="shoes for everyone" />
       </div>
     </div>
   );

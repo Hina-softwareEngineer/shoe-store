@@ -1,0 +1,151 @@
+.preview {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  letter-spacing: 1.3px;
+}
+
+.preview > .bigImage {
+  width: 500px;
+  height: 400px;
+  padding: 20px 40px;
+}
+
+.bigImage > img {
+  width: inherit;
+  height: inherit;
+}
+
+.descriptions {
+  padding: 20px;
+}
+
+.descriptions > h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.descriptions > p {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.colors {
+  display: flex;
+}
+
+.colors > div:first-child {
+  margin-left: 0;
+}
+
+.colors > div {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: rgb(68, 163, 68);
+}
+
+.brown {
+  background-color: rgb(212, 65, 65);
+}
+
+.purple {
+  background-color: rgb(163, 50, 163);
+}
+
+.priceRatings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+}
+
+.priceRatings > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ratings > svg {
+  fill: yellow;
+  stroke: orange;
+  margin: 0 5px;
+}
+
+.notfill {
+  fill: transparent !important;
+}
+
+.descriptions > button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid purple;
+  background-color: #0086c3;
+  color: white;
+}
+
+.descriptions > button:hover {
+  box-shadow: 2px 2px 4px rebeccapurple;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .preview {
+    margin: 0 5px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border: 3px solid #0086c3;
+    border-radius: 5px;
+  }
+
+  .preview > .bigImage {
+    width: 310px;
+    height: 250px;
+    padding: 20px 5px;
+  }
+
+  .descriptions {
+    padding: 20px 5px;
+  }
+
+  .descriptions > h3 {
+    font-size: 2.3rem;
+  }
+
+  .descriptions > p {
+    max-width: 300px;
+  }
+
+  .priceRatings {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .priceRatings > p {
+    margin: 10px 0;
+  }
+
+  .descriptions > p {
+    font-size: 16px;
+  }
+
+  .ratings > svg:first-child {
+    margin-left: 0px;
+  }
+
+  .descriptions > button {
+    width: 100%;
+  }
+}
