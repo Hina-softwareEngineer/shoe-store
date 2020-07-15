@@ -1,4 +1,4 @@
-name: Github CD Pipeline
+name: Github CD
 
 on: [push]
 
