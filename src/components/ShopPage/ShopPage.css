@@ -13,6 +13,7 @@
   padding: 20px;
   margin: 20px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .item > h1 {
